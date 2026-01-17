@@ -16,5 +16,5 @@ connectorId: movie-connector
 generate:
   javascriptSdk:
     package: "@movie/dataconnect"
-    outputDir: ../../app/src/lib/dataconnect-sdk
-    packageJsonDir: "../../app"
+    outputDir: ../../src/lib/dataconnect-sdk
+    packageJsonDir: "../../src"

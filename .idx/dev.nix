@@ -22,7 +22,7 @@
         command = [
           "npm"  # Changed from pnpm
           "run"
-          "dev:emulator"
+          "dev"
           "--"   # Often required by npm to pass arguments to the script
           "--port"
           "$PORT"
