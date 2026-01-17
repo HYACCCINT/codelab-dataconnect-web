@@ -2,8 +2,6 @@
   channel = "stable-24.11";
   packages = [
     pkgs.nodejs_20
-    pkgs.pnpm
-    pkgs.npm
     pkgs.jdk17
     pkgs.zip
   ];
@@ -18,15 +16,16 @@
     start-emulators = "npx -y firebase-tools@latest emulators:start";
   };
   idx.previews = {
-    enable = true; 
+    enable = true;
     previews = {
       web = {
         command = [
-          "pnpm"
-          "run" 
-          "dev:emulator" 
+          "npm"  # Changed from pnpm
+          "run"
+          "dev:emulator"
+          "--"   # Often required by npm to pass arguments to the script
           "--port"
-          "$PORT" 
+          "$PORT"
         ];
         manager = "web";
       };
