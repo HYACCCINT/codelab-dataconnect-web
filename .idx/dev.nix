@@ -2,6 +2,7 @@
   channel = "stable-24.11";
   packages = [
     pkgs.nodejs_20
+    pkgs.pnpm
     pkgs.npm
     pkgs.jdk17
     pkgs.zip
@@ -21,7 +22,7 @@
     previews = {
       web = {
         command = [
-          "npm"
+          "pnpm"
           "run" 
           "dev:emulator" 
           "--port"
