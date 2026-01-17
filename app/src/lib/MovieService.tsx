@@ -27,8 +27,8 @@
 // import { searchAll, SearchAllData } from "@movie/dataconnect";
 
 // import {
-//   searchMovieDescriptionUsingL2similarity,
-//   SearchMovieDescriptionUsingL2similarityData,
+//   searchMovieDescriptionUsingL2Similarity,
+//     SearchMovieDescriptionUsingL2SimilarityData,
 // } from "@movie/dataconnect";
 
 import { onAuthStateChanged, User } from "firebase/auth";
@@ -124,12 +124,6 @@ export const handleSearchAll = async (
 // Perform vector-based search for movies based on description
 export const searchMoviesByDescription = async (
   query: string
-): Promise<any[]> => {
-  return [];
-};
-
-export const fetchSimilarMovies = async (
-  description: string
 ): Promise<any[]> => {
   return [];
 };
