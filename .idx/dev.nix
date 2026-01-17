@@ -10,7 +10,7 @@
     "GraphQL.vscode-graphql-syntax"
   ];
   idx.workspace.onCreate = {
-    install-dependencies = "cd app && npm install";
+    install-dependencies = "npm install";
   };
   idx.workspace.onStart = {
     start-emulators = "npx -y firebase-tools@latest emulators:start";
